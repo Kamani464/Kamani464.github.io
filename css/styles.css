@@ -1,0 +1,212 @@
+@charset "UTF-8";
+body {
+  background-color: mediumpurple;
+}
+img {
+  width: 55%;
+  margin: auto;
+  display: block;
+}
+p {
+  font-size: 21px;
+  text-align: center;
+}
+a {
+  font-size: 22px;
+}
+iframe {
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+h1 {
+  position: fixed;
+  width:calc(73.1vw);
+
+  margin-top: 0px;
+  text-align: center;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rebeccapurple;
+  font-size: 42px;
+  color: white;
+	    z-index: 3;
+}
+#mainDiv {
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flow-root;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+  background-color: lightgray;
+  border-style: groove;
+  border-width: 10px;
+}
+
+#mainDiv2{
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 75%;
+  margin: auto;
+  background-color: lightgray;
+  border-style: groove;
+  border-width: 10px;
+	margin-bottom: 10;
+}
+.titles2 {
+  background-color: darkseagreen;
+  text-align: center;
+  font-size: 22px;
+  float: center;
+  width: 100%;
+  padding: 0px;
+}
+.titles {
+  background-color: darkseagreen;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+#Jazz {
+  background-color: grey;
+  text-align: center;
+  font-size: 16px;
+  margin:auto;
+  width: 90%;
+  position: relative;
+  top: 0;
+  border-style: groove;
+  border-width: 10px;
+}
+.leftparagraph {
+text-align:left;
+font-size:25px;
+}
+#Animation {
+  background-color: darkseagreen;
+  text-align: center;
+  font-size: 16px;
+  margin:auto;
+  width: 90%;
+  position: relative;
+  top: 0;
+  border-style: groove;
+  border-width: 10px;
+}
+#Work {
+  position:static;
+  border-style: groove;
+  border-width: 15px;
+  border-radius: 3px;
+  background-color: darkgrey;
+  display: flex;
+  justify-content: space-around;
+}
+#mobileNav {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  #mobileNav {
+    display: block;
+  }
+  h1 {
+    display: none;
+  }
+  .titles {
+    display: none;
+  }
+  #Work {
+    display: none;
+  }
+  body {
+    background-color: silver;
+  }
+}
+.mobileNavBar {
+  background-color: rebeccapurple;
+  position: relative;
+  border: 1px solid;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+#Menu {
+  text-align: center;
+  align-self: center;
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rebeccapurple;
+  font-size: 42px;
+  color: white;
+}
+#hamburgerDiv {
+  /*background-color: aqua;
+        height: 75%;
+        font-size: 32px;
+        border: 1px solid;*/
+  align-self: center;
+}
+#hamburgerBtn {
+  background-color: white;
+  font-size: 32px;
+  border: 1px solid;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#theLinks {
+  background-color: yellow;
+  display: none;
+  text-align: center;
+  font-family: "Anta", sans-serif;
+}
+#theLinks a {
+  display: block;
+  text-decoration: none;
+  font-family: "Anta", sans-serif;
+}
+.mainDiv {
+  background-color: lightcoral;
+  display: grid;
+  height: 50vh;
+}
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px dashed#ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: mediumpurple;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	
+}
+
+.container {
+  width: 100%;
+  border: 3px dashed #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 22px;
+  margin-bottom: 6px;
+  resize: vertical;
+  background-color: #f2f2f2;
+  padding: 40px;
+
+}

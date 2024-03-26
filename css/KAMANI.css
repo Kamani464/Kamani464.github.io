@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+*
+{
+background-color:aliceblue;	
+	
+	
+}
+
+h1, h3
+{
+	color: rebeccapurple;
+	size: 20px;
+	text-align: center;
+}
+
+#para1
+{
+	color: goldenrod;
+	size:16px;
+text-align: center;
+}
+
+/*this is an image*/
+img
+{
+	border: red;
+	border-spac
+}
+.center
+	{
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+		width: 20%;
+	}
+	
+	
+}
