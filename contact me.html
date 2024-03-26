@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<title>Contact Me</title>
+	</head>
+	
+	<body>
+		<div id="mobileNav">
+		  <div class="mobileNavBar">
+			<div id="Menu">Kamani Millington</div>
+			<div id="hamburgerDiv">
+			  <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+			</div>
+		  </div>
+		  <div id="theLinks"><a href="Kamani Millington.html">Home!</a><a href="page2.html">My Work</a><a href="about me.html">About Me</a><a href="contact me.html">Contact Me!</a></div>
+		</div>
+		<div id="mainDiv">
+		  <h1>Contact Me&nbsp;</h1>
+		  <div class="container">
+			  <form action="/action_page.php">
+				<label for="fname">First Name</label>
+				<input type="text" id="fname" name="firstname" placeholder="Your name..">
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+				<label for="subject">Subject</label>
+				<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
+				<input type="submit" value="Submit">
+			  </form>
+		  </div>
+		  <div id="Work">
+			<p> <a href="Kamani Millington.html">Home</a> </p>
+			<p> <a href="page2.html">My Work</a> </p>
+			<p> <a href="contact me.html">Contact</a> </p>
+		  </div>
+		</div>
+	</body>
+</html>
+
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>

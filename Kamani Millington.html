@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kamani Millington</title>
+
+
+<body>
+<div id="mobileNav">
+  <div class="mobileNavBar">
+    <div id="Menu">Kamani Millington</div>
+    <div id="hamburgerDiv">
+      <button id="hamburgerBtn" onclick="myDropdownFunction()">&#9776;</button>
+    </div>
+  </div>
+  <div id="theLinks"><a href="Kamani Millington.html">Home!</a><a href="page2.html">My Work</a><a href="about me.html">About Me</a><a href="contact me.html">Contact Me!</a><a href="midterm.html">Midterm Ideas</a></div>
+</div>
+<div id="mainDiv2">
+  <h1>Kamani Millington</h1>
+  <br>
+  <br>
+  <div class="titles2">
+    <h3>Good Evening. My name is Kamani Millington, and I am a junior, Emerging Media Major.</h3>
+  </div>
+  <p>I have always been interested in media topics, and technology in general, but the concept of coding is very interesting to me. It is interesting to see what commands correspond to the internet, which we use almost <em>daily</em>, so it will be very useful for me to make a peroper website of my own. As i've taken several media classes, Click below for more of my work.</p>
+  <div id="Work">
+    <p> <a href="Kamani Millington.html">Home</a> </p>
+    <p> <a href="page2.html">My Work</a> </p>
+    <p> <a href="contact me.html">Contact</a> </p>
+    <p> <a href="Midterm.html">Midterm Ideas</a> </p>
+  </div>
+</div>
+</body>
+</html>
+<script>
+    function myDropdownFunction() {
+      var linksDiv = document.getElementById("theLinks");
+      if (linksDiv.style.display === "block") {
+        linksDiv.style.display = "none";
+      }
+		else {
+        linksDiv.style.display = "block";
+      }
+    }
+</script>
