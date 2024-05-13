@@ -1,47 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Adventure Game</title>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="main.css">
-	</head>
-	<body>
-		<audio preload loop autoplay>
-		  <source src="Resources/truckidle.mp3" type="audio/mpeg"/>
-		</audio>
-			<div class="body">
-				<img src="Resources/Truck.png" alt="Window">
-				<div class="dialogueext">
-				  <div class="dialogue">
-				    <p>It's you, <span id="playerName"></span>, Please help me!</p>
-				  </div>
-				</div>
-					<p> <a href="Page4.html" target="_self">Sure, I'll help you.</a> <a id="trapButton" href="Page1C.html" target="_self">No! That's clearly a trap</a> </p>
-			</div>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <audio preload loop autoplay>
+        <source src="Resources/truckidle.mp3" type="audio/mpeg"/>
+    </audio>
+    <div class="body">
+        <img src="Resources/Truck.png" alt="Window">
+        <div class="dialogueext">
+            <div class="dialogue">
+                <p>It's you, <span id="fName"></span>, Please help me!</p>
+            </div>
+        </div>
+        <p>
+            <a href="Page4.html" target="_self">Sure, I'll help you.</a>
+            <a href="Page1C.html" target="_self">No! That's clearly a trap</a>
+        </p>
+    </div>
+
+    <script>
+
+    </script>
+</body>
 </html>
-
-
-<script>
-        var playerName = localStorage.getItem("playerName");
-        document.getElementById("playerName").textContent = playerName || "";
-
-        function chooseOption(page) {
-            window.location.href = page;
-        }
-
-
-        var trapButton = document.getElementById("trapButton");
-
-        trapButton.addEventListener("mouseover", function() {
-            trapButton.textContent = "PLEASE!!!!";
-        });
-
-        trapButton.addEventListener("mouseout", function() {
-            trapButton.textContent = "No! That's clearly a trap";
-        });
- </script>

@@ -8,26 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
-    <div class="body">
-   					 <img id="mainImage" src="Resources/Sadness.jpg" alt="Window">
-   					 <br>
-   					 <audio loop autoplay>
-   					     <source src="Resources/forestr.mp3" type="audio/mp3" />
-   					 </audio>
-	</div>
+    <div class="body">   	
+        <audio loop autoplay>
+            <source src="Resources/forestr.mp3" type="audio/mp3" />
+        </audio>
+    </div>
+    <div style="body">
+        <a href="Page6.html">
+            <img 
+            src="Resources/Sadness.jpg" 
+            id="goon" 
+            onMouseOver="mouseOverFUNC()" 
+            onMouseDown="mouseDownFUNC()" 
+            onMouseUp="mouseUpFUNC()" 
+            onMouseOut="mouseOutFUNC()"
+            ></a>
+    </div>
+	
 </body>
 </html>
-
-    <script>
-        const mainImage = document.getElementById('mainImage');
-
-        mainImage.addEventListener('click', function() {
-            mainImage.src = "Resources/Sadness2.jpg";
-            mainImage.addEventListener('click', function() {
-            window.location.href = "page6.html";
-            });
-        });
-    </script>

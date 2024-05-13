@@ -8,20 +8,26 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="main.css">
+		<script type="text/javascript" src="script.js"></script>
 		</head>
 	<body>
 		<div class="body">
-		  <div class="photos"> 
-				<img src="Resources/Carlton1.jpg" alt="Window"> 
-				<img src="Resources/Carlton2.jpg" alt="Window"> 
-		  </div>
+		  <div class="photos"> <img 
+		            src="Resources/Carlton2.jpg" 
+		            id="break" 
+		            onMouseOver="mouseOverFUNC()" 
+		            onMouseDown="mouseDownFUNC()" 
+		            onMouseUp="mouseUpFUNC()" 
+		            onMouseOut="mouseOutFUNC()"
+					onclick="playAudio('Resources/hammer.wav')"
+		            ></a> <img src="Resources/Carlton2.png" alt="Window"> </div>
 		  <div class="text">
-		    	<div class="dialogueext">
-		    	  <div class="dialogue">
-		    	    <p>You make it to Carlton's. Seems like it's locked down here!</p>
-		    	  </div>
-				</div>		  
-		   </div>
+		    <div class="dialogueext">
+		      <div class="dialogue">
+		        <p>You make it to Carlton's. Seems like it's locked down here!</p>
+		      </div>
+		    </div>
+		  </div>
 		</div>
 		<p> <a href="Page7.html" target="_self">Break the lock and enter?</a> <a href="PageA6.html" target="_self">Look for another entry around the back</a> </p>
 		<br />
