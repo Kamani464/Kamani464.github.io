@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Args and Params</title>
+</head>
+
+<body>
+    <div>
+        <p>Who is logging in?</p>
+        <button onClick="greet('User 1')">User 1</button>
+        <button onClick="greet('User 2')">User 2</button>
+    </div>
+    
+    <br>
+    
+    <div id="helloDiv">
+    </div>
+</body>
+</html>
+
+<script>
+    function greet(name) {
+        var theDiv = document.getElementById("helloDiv");
+        theDiv.innerHTML = "Hello " + name;
+        console.log("Hello " + name);
+    }
+</script>

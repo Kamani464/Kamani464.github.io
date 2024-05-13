@@ -1,0 +1,170 @@
+.photos {
+    display: flex; 
+}
+.photos img {
+    width: 50%; 
+    height: auto; 
+}
+
+
+body {
+  background-image: url("https://cdn.glitch.global/d2418f38-0cbd-48f0-a18f-b84bbe2a3c5f/Background.png?v=1683232583552");
+  font-family: 'Special Elite', cursive;
+  color: White;
+  font-size: 40px;
+  margin: auto;
+  width: 75%;
+  text-align: center;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+	
+}
+
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dialogueext{
+ border-radius: 10px;
+ border-style: groove;
+ background-color: grey;
+	
+	
+}
+.dialogue{
+  font-size: 60%;
+  overflow: hidden;
+  border-right: .25px solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: 25%;
+  animation: 
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+  padding:25px;
+ 
+}	
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+a {
+  background-color: #f44336;
+  color: white;
+  padding: 24px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+    display: flex; 
+}
+
+a:hover, a:active {
+  background-color: black;
+}
+
+
+.options{
+  position: fixed;
+  bottom: -100%;
+  opacity:0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  animation: smooth-appear 5s ease forwards;
+}
+@keyframes smooth-appear {
+  to{
+    bottom: 75%;
+    opacity:1;
+  }
+}
+
+.optionsb{
+  position: relative;
+  bottom: -100%;
+  opacity:0;
+  border-radius: 10px;
+  animation: smooth-appear 1s ease forwards;
+}
+@keyframes smooth-appear {
+  to{
+    bottom: 15%;
+    opacity:1;
+  }
+}
+
+body input[type=text] {
+  padding: 10px;
+  margin: 18px;
+  font-size: 17px;
+  border: none;
+  width: 600px;
+  color: black;
+  border-radius: 35px;
+}
+
+#startButton  {
+  border-style:none;
+  border-radius: 35px;
+  background-color: #FF0004;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+
+}
+
+
+button {
+  margin: auto;
+}
+
+.name {
+	border-style: outset;
+	border-radius: 35px;
+	padding: 25px;
+}
+
+.description {
+  font-size: 25px;
+  padding: 25px;
+}
+
+.entername {
+  padding: 15px;
+}
+
+img {
+  max-width: 100%;
+  background-size: cover;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+

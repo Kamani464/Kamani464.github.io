@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Console Log</title>
+</head>
+
+<body onLoad="sayHello()">
+</body>
+</html>
+
+<style>
+</style>
+
+<script>
+    function square (number) {
+        return number * number;
+    }
+
+    var product = square(2); //argument is explicit
+    console.log(product);
+
+    
+    var num1 = 2
+    var num2 = 3
+
+    function add(n1, n2) {
+        return n1 + n2;
+    }
+
+    var sum = add(num1, num2); //arguments are variables
+    console.log(sum);
+    
+    
+    function sayHello(){
+        console.log("Hello world!");
+    }
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Change Style</title>
+    </head>
+    
+    <body onload="changeOneDivColor(), changeAllDivColors()">
+        <div class="aBigGreenDiv">
+            <div class="thePinkDivContainingTheGrid"> 
+                <div class="defaultGridItems">1</div>
+                <div class="defaultGridItems">2</div>
+                <div class="defaultGridItems">3</div>
+                <div class="defaultGridItems">4
+                </div>
+                <div class="defaultGridItems">
+                    <img src="hat.gif">
+                </div>
+                <div class="defaultGridItems aGridWithinAnItem">
+                    <img src="hat.gif">
+                </div>
+                <div class="defaultGridItems">7</div>
+                <div class="defaultGridItems anotherGridItemClass">8</div>
+                <div class="defaultGridItems">9</div>
+                <div class="defaultGridItems" id="changeMe" onMouseOver="changeSomeHTML()">10</div>
+                <div class="defaultGridItems">11</div>
+                <div class="defaultGridItems" id="oneDiv">12</div>
+                <div class="defaultGridItems yetAnotherGridItemClass">13</div>
+                <div class="aGridItemWithNoStyling">14</div>
+            </div>
+        </div>
+
+    </body>
+</html>
+
+<script>  
+    var aDiv = document.getElementById("oneDiv");
+    function changeOneDivColor() {
+        aDiv.style.backgroundColor = "red";
+    }
+    
+    var theDivs = document.getElementsByClassName("defaultGridItems");
+    function changeAllDivColors() {
+        theDivs[0].style.backgroundColor = "purple";
+    }
+    
+    var textIntoDiv = document.getElementById("changeMe");
+    function changeSomeHTML() {
+        textIntoDiv.innerHTML = "Hello World!";
+    }
+    
+</script>
+

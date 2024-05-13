@@ -1,0 +1,32 @@
+button {
+ margin: auto;
+}
+
+body {
+  background-image: url("https://cdn.glitch.global/d2418f38-0cbd-48f0-a18f-b84bbe2a3c5f/Background.png?v=1683232583552");
+  font-family: 'Special Elite', cursive;
+    color: White;
+    font-size: 40px;
+    margin: auto;
+  width: 50%;
+
+}
+
+img {
+  max-width: 200%;
+  height: au
+    to;
+
+    float: center;
+    width:  1100px;
+    height: 600px;
+    background-size: cover;
+}
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

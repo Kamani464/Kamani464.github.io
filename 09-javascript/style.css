@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 
+The grid-row (or grid-column) property (ie grid-row: 1 / 2;) specifies a grid item's size and location in a grid layout, and is a shorthand property for grid-row-start/grid-row-end
+
+The grid-auto-rows property sets a size for the rows in a grid container. This property affects only rows without a size set.
+
+The grid-template-rows property specifies the number (and the heights) of the rows in a grid layout. The values are a space-separated list, where each value specifies the height of the respective row.
+
+"align" along column (vertical) axis
+"justify" along row (horizontal) axis
+
+If the grid layout (the columns and rows) is setup as being smaller than the container:
+justify-content justifies the whole grid horizontally
+align-content aligns the whole grid along vertically 
+
+The following properties affect all the grid items:
+
+justify-items in the grid container class
+align-items in the grid container class
+
+justify-self on the grid item's class
+align-self on the grid item's class
+
+*/
+
+body {background-color: lightblue;}
+
+img {
+    width: 50%;
+}
+
+.aBigGreenDiv{
+    background-color: green;
+    margin: auto; /*center the green div */
+    width: 90vw;
+    height: 80vh;
+    border: 5px dotted blue;
+}
+
+/*#bgImg {
+    z-index: 0;
+    position: absolute;
+    left: 30%; 
+    height: 90%;
+    width: auto;
+}*/
+
+.thePinkDivContainingTheGrid { 
+    display: grid;
+    background-color: pink;
+    opacity: .75;
+    border: 5px solid yellow;
+    width: 75%; /* 75% of parent div's width */
+    height: 85%; /* 85% of parent div's height */
+    justify-content: end;    /*the position of the whole grid horizontally*/
+    align-content: end;    /*the position of the whole grid vertically*/
+    grid-template-columns: 50px 25% 50px 25vw;    /*setup how many columns and their minimum sizes*/
+    grid-template-rows: 50px auto .5fr 20%;    /*define rows*/
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+.defaultGridItems {
+    border: 1px solid red;
+    font-size: 2vh;
+    justify-self: stretch; /*align items along column axis, stretch is the default, try start, center, or end*/
+    align-self: stretch; /*align items along column axis, stretch is the default, try start, center, or end*/
+}
+
+.aGridWithinAnItem {
+    background-color: orange;
+    display: grid; /*define a new grid within the grid item */
+    justify-items: center; /*center items along row axis*/
+    align-items: center; /*center items along column axis*/
+}
+
+.anotherGridItemClass {
+    background-color: lightblue;
+    align-self: center;
+    justify-self: end;
+}
+
+.yetAnotherGridItemClass {
+    background-color: darkblue;
+    color: white;
+    justify-self: start;
+    align-self: start; 
+}
+
+.aGridItemWithNoStyling {
+    /*add some more styling to this item*/
+    cursor: pointer;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+        body {
+            background-color: red;
+        }
+
+        .theDivContainingTheGrid { 
+            display: grid;
+            background-color: lightpink;
+            width: 75%;
+            height: 95%;
+            float: left;
+            justify-content: center;    
+            align-content: stretch;    
+            border: 5px solid yellow;
+            grid-template-columns: 50%;    
+            grid-template-rows: 7%;    
+            column-gap: 10px;
+            row-gap: 5px;
+        }
+
+        img {width: 5vh !important;}
+    }

@@ -30,8 +30,13 @@
 				<input type="text" id="lname" name="lastname" placeholder="Your last name..">
 				<label for="subject">Subject</label>
 				<textarea id="subject" name="subject" placeholder="Write something.." style="height:100px"></textarea>
-				<input type="submit" value="Submit">
 			  </form>
+			 
+    			<button type="button" onClick="sayHello()">Submit</button>
+			 
+    <div id="helloDiv">
+    </div>
+			 
 		  </div>
 		  <div id="Work">
 			<p> <a href="index.html">Home</a> </p>
@@ -39,17 +44,27 @@
 			<p> <a href="contact me.html">Contact</a> </p>
 		  </div>
 		</div>
-	</body>
-</html>
-
+	
 <script>
+    function sayHello() {
+        var fNameVar = document.getElementById("fname").value;
+        var lNameVar = document.getElementById("lname").value;
+        var theDiv = document.getElementById("helloDiv");
+        theDiv.innerHTML = "Hello, " + fNameVar + " " + lNameVar + "Your Email Will be Sent!" ;
+    }
+
     function myDropdownFunction() {
-      var linksDiv = document.getElementById("theLinks");
-      if (linksDiv.style.display === "block") {
-        linksDiv.style.display = "none";
-      }
-		else {
-        linksDiv.style.display = "block";
-      }
+        var linksDiv = document.getElementById("theLinks");
+        if (linksDiv.style.display === "block") {
+            linksDiv.style.display = "none";
+        } else {
+            linksDiv.style.display = "block";
+        }
     }
 </script>
+		
+	</body>
+
+
+	
+</html>

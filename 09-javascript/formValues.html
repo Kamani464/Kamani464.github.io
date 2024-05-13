@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form Values</title>
+</head>
+
+<body>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fName" placeholder="What's your first name?"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lName" placeholder="And your last name?"><br><br>
+    </form> 
+    <button type="button" onClick="sayHello()">Submit</button>
+    
+    <br>
+    <br>
+    
+    <div id="helloDiv">
+    </div>
+    
+    <script>
+    var theDiv = document.getElementById("helloDiv");
+    
+    function sayHello(){
+        var fNameVar = document.getElementById("fName").value;
+        var lNameVar = document.getElementById("lName").value;
+        theDiv.innerHTML = "Hello " + fNameVar + " " + lNameVar; + "!";
+    }
+</script>
+</body>
+</html>
+
